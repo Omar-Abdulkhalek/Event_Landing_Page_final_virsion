@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Landing Page</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+        }
+
+        header.main {
+            height: 50vh;
+        }
+
+        header.main div.img-container {
+            height: 100%;
+            background-image: url(https://raw.githubusercontent.com/Omar-Abdulkhalek/Event_Landing_Page/master/img/event.jpg);
+            background-size: 100% 100%;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+
+
+
+        section.section-after-header div.text-container {
+            text-align: center;
+        }
+
+        section.section-after-header div.text-container h1 {
+
+            color: #F700D9;
+            background-image: -webkit-linear-gradient(0deg, #F700D9 0%, #9B0087 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            text-fill-color: transparent;
+            -webkit-text-fill-color: transparent;
+            font-size: 1.85rem;
+
+        }
+
+
+        section.section-after-header div.text-container h2 {
+
+
+            color: #9B0087;
+            background-image: -webkit-linear-gradient(0deg, #9B0087 0%, #F100D4 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            text-fill-color: transparent;
+            -webkit-text-fill-color: transparent;
+            font-size: 1.8rem;
+
+
+        }
+
+        section.section-after-header div.text-container p {
+            font-size: 1.5rem;
+            line-height: 40px;
+            font-weight: 800;
+        }
+
+        section.section-after-header div.text-container h3 {
+            font-size: 1.7rem;
+        }
+
+        div.container {
+            width: 90%;
+            margin: auto;
+
+        }
+
+
+        section.frist-section p,
+        section.second-section p {
+            font-size: 1.5rem;
+            font-weight: 500;
+            line-height: 35px;
+        }
+
+        section.frist-section p span,
+        section.second-section p span {
+            font-weight: 900;
+            font-weight: 1.4 rem;
+
+        }
+
+        section.second-section div.pepole-container {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: nowrap;
+        }
+
+
+        section.second-section div.pepole-container .same-width {
+            width: 25%;
+
+        }
+
+        section.second-section div.pepole-container .same-width .img-cont {
+
+            width: 80%;
+            margin: auto;
+            text-align: center;
+
+        }
+
+        section.second-section div.pepole-container .same-width .img-cont img {
+
+            width: 70%;
+            border-radius: 50%;
+
+        }
+
+        section.second-section div.pepole-container .same-width .text-cont {
+            text-align: center;
+        }
+
+        section.second-section div.btn {
+            text-align: center;
+            margin: 50px 0px;
+        }
+
+        section.second-section div.btn a {
+            text-decoration: none;
+            color: #fff;
+            background-color: #ED7D31;
+            padding: 15px 70px;
+            font-size: 1.5rem;
+            border-radius: 10px;
+        }
+
+
+        footer div.line {
+            width: 100%;
+            height: 10px;
+            background-image: linear-gradient(to right top, #ef0071, #fc345d, #ff564b, #ff743b, #fe902e);
+
+        }
+
+        footer div.logo-icons {
+            background-color: #0D1720;
+            padding: 40px 0;
+        }
+
+
+
+        footer div.logo-icons div.img {
+            width: 10%;
+            margin: auto;
+        }
+
+        footer div.logo-icons div.img img {
+            width: 100%;
+        }
+
+
+        footer div.logo-icons div.icons {
+            width: 20%;
+            margin: 10px auto 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        footer div.logo-icons div.icons i {
+            font-size: 30px;
+            color: #fff;
+        }
+
+
+        /* responsive */
+
+        /* Media Query */
+
+        /* extra small screen */
+        @media all and (max-width:576px) {
+            html {
+                font-size: 10px;
+            }
+
+
+            header.main div.img-container {
+
+                background-size: 100% 50%;
+            }
+
+            section.second-section div.pepole-container {
+
+
+                flex-direction: column;
+            }
+
+
+            section.second-section div.pepole-container .same-width {
+                width: 100%;
+                margin: 20px 0;
+
+            }
+
+            section.second-section div.pepole-container .same-width .text-cont h3 {
+                font-size: 1.4rem;
+            }
+
+            section.second-section div.pepole-container .same-width .text-cont h5 {
+                font-size: 1.2rem;
+            }
+
+
+            section.second-section div.btn a {
+
+                padding: 15px 50px;
+                font-size: 1.3rem;
+
+            }
+
+            footer div.logo-icons div.img {
+                width: 30%;
+
+            }
+        }
+
+
+
+
+        /*small screen */
+        @media all and (min-width:576px) and (max-width:768px) {
+
+            html {
+                font-size: 12px;
+            }
+
+            header.main div.img-container {
+
+                background-size: 100% 60%;
+            }
+
+            section.second-section div.pepole-container {
+
+
+                flex-direction: column;
+            }
+
+
+            section.second-section div.pepole-container .same-width {
+                width: 100%;
+                margin: 20px 0;
+
+            }
+
+            section.second-section div.pepole-container .same-width .text-cont h3 {
+                font-size: 1.4rem;
+            }
+
+            section.second-section div.pepole-container .same-width .text-cont h5 {
+                font-size: 1.2rem;
+            }
+
+            section.second-section div.btn a {
+
+                padding: 15px 55px;
+                font-size: 1.4rem;
+
+            }
+
+            footer div.logo-icons div.img {
+                width: 30%;
+
+            }
+
+        }
+
+
+
+
+
+        /* medium screen */
+        @media all and (min-width:768px) and (max-width:992px) {
+
+
+            html {
+                font-size: 14px;
+            }
+
+
+            section.second-section div.pepole-container {
+
+
+                flex-direction: column;
+            }
+
+
+
+            section.second-section div.pepole-container .same-width {
+                width: 100%;
+                margin: 20px 0;
+
+            }
+
+            section.second-section div.pepole-container .same-width .text-cont h3 {
+                font-size: 1.5rem;
+            }
+
+            section.second-section div.pepole-container .same-width .text-cont h5 {
+                font-size: 1.3rem;
+            }
+
+
+            section.second-section div.btn a {
+
+                padding: 15px 60px;
+                font-size: 1.5rem;
+
+            }
+
+            footer div.logo-icons div.img {
+                width: 25%;
+
+            }
+        }
+
+
+
+        /* large screen */
+        @media all and (min-width:992px) and (max-width:1200px) {
+
+            div.container {
+                width: 70%;
+                margin: auto;
+
+            }
+
+            html {
+                font-size: 16px;
+            }
+
+
+
+            section.second-section div.pepole-container {
+
+
+                align-items: unset;
+
+            }
+
+            section.second-section div.pepole-container .same-width .text-cont h3 {
+                font-size: 1.2rem;
+            }
+
+            section.second-section div.pepole-container .same-width .text-cont h5 {
+                font-size: 1rem;
+            }
+
+            section.second-section div.btn a {
+
+                padding: 15px 70px;
+                font-size: 1.2rem;
+
+            }
+
+            footer div.logo-icons div.img {
+                width: 28%;
+
+            }
+
+        }
+
+
+
+
+        /* extra large screen */
+        @media all and (min-width:1201px) {
+
+
+            div.container {
+                width: 70%;
+                margin: auto;
+
+            }
+
+            html {
+                font-size: 17px;
+            }
+
+            section.second-section div.pepole-container {
+
+
+                align-items: unset;
+
+            }
+
+            section.second-section div.pepole-container .same-width .text-cont h3 {
+                font-size: 1.2rem;
+            }
+
+            section.second-section div.pepole-container .same-width .text-cont h5 {
+                font-size: 1rem;
+            }
+
+            section.second-section div.btn a {
+
+                padding: 15px 90px;
+                font-size: 1.4rem;
+
+            }
+
+            footer div.logo-icons div.img {
+                width: 28%;
+
+            }
+
+
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <header class="main">
+        <div class="img-container">
+            
+        </div>
+
+
+    </header>
+
+    <section class="section-after-header">
+        <div class="text-container">
+            <h1>
+                Unlock Your Data & Innovate with Splunk
+            </h1>
+            <h2>
+                .Conf Go is coming to Dubai
+            </h2>
+            <p>
+                18th October 2022 <br />
+                09:00 - 14:00
+
+            </p>
+            <h3>
+                Museum of the Future , Dubai
+            </h3>
+        </div>
+
+    </section>
+
+
+    <section class="frist-section">
+
+        <div class="container">
+            <p>
+                We are bringing the best of <span>.Conf22</span> Event to your doorsteps!
+            </p>
+
+            <p>
+                The best of Splunk’s biggest customer event of the year is coming to <span>Dubai</span> on
+                <span>18<sup>th</sup> October 2022 </span> taking
+                place at the iconic <span> Museum of the Future !</span>
+            </p>
+
+            <p>
+                Join us as we share the latest Splunk innovations and new ways to solve your security and observability
+                challenges at <a href="https://events.splunk.com/conf-Go-Dubai" target="_blank"><span>.conf Go
+                        Dubai.</span></a>
+            </p>
+
+            <p>
+                At <span>.Conf Go Dubai</span> you will explore ways to unlock your data and put it to work — visualise
+                it, analyse
+                it and respond to achieve better outcomes to help solve your biggest data challenges. Plus, you’ll have
+                the opportunity to connect with your peers.
+            </p>
+
+            <p>
+                Whether you’re a longtime Splunk user, just implementing Splunk, or yet to begin your Splunk journey,
+                <a href="https://events.splunk.com/conf-Go-Dubai" target="_blank"><span>.conf Go Dubai</span></a> is the
+                place to learn how to turn your data into answers.
+            </p>
+        </div>
+
+    </section>
+
+    <section class="second-section">
+
+        <div class="container">
+            <div class="pepole-container">
+
+                <div class="first same-width">
+                    <div class="img-cont">
+                        <img src="https://raw.githubusercontent.com/Omar-Abdulkhalek/Event_Landing_Page/master/img/image1.jpg" alt="">
+                    </div>
+                    <div class="text-cont">
+
+                        <h3>
+                            Ahmed Alsaadi
+                        </h3>
+
+                        <h5>
+                            Vice President | MEA<br>
+                            Splunk
+
+                        </h5>
+                    </div>
+                </div>
+                <div class="second same-width">
+                    <div class="img-cont">
+                        <img src="https://raw.githubusercontent.com/Omar-Abdulkhalek/Event_Landing_Page/master/img/image6.png" alt="">
+                    </div>
+                    <div class="text-cont">
+
+                        <h3>
+                            Dimitris Vergos
+                        </h3>
+
+                        <h5>
+                            SE Director | EMEA South<br>
+                            Splunk
+                        </h5>
+                    </div>
+                </div>
+                <div class="third same-width">
+                    <div class="img-cont">
+                        <img src="https://raw.githubusercontent.com/Omar-Abdulkhalek/Event_Landing_Page/master/img/image2.jpg" alt="">
+                    </div>
+                    <div class="text-cont">
+
+                        <h3>
+                            Caglar Dogan </h3>
+
+                        <h5>
+                            Security | Emerging Markets<br>
+                            Splunk
+
+                        </h5>
+                    </div>
+                </div>
+                <div class="fourth same-width">
+                    <div class="img-cont">
+                        <img src="https://raw.githubusercontent.com/Omar-Abdulkhalek/Event_Landing_Page/master/img/image3.jpg" alt="">
+                    </div>
+                    <div class="text-cont">
+
+                        <h3>
+                            Elias Haddad </h3>
+
+                        <h5>
+                            SE Manager | Middle East<br>
+                            Splunk
+                        </h5>
+                    </div>
+                </div>
+
+            </div>
+            <div>
+                <p>
+                    <a href="https://events.splunk.com/conf-Go-Dubai" target="_blank"><span>.conf Go Dubai</span></a> is
+                    a free-to-attend half-day event , <a href="https://events.splunk.com/conf-Go-Dubai"
+                        target="_blank"><span>Register</span></a> today and block your spot!
+                </p>
+            </div>
+            <div class="btn">
+                <a href="https://events.splunk.com/conf-Go-Dubai" target="_blank">Register Now</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="line">
+
+        </div>
+        <div class="logo-icons">
+            <div class="img">
+                <img src="https://raw.githubusercontent.com/Omar-Abdulkhalek/Event_Landing_Page/master/img/logo.png" alt="">
+            </div>
+            <div class="icons">
+                <div class="face"><a href="https://www.facebook.com/splunk" target="_blank"><i
+                            class='bx bxl-facebook'></i></a></div>
+                <div class="insta"><a href="https://www.instagram.com/splunk/" target="_blank"><i
+                            class='bx bxl-instagram'></i></a></div>
+                <div class="linked"><a href="https://www.linkedin.com/company/splunk/" target="_blank"><i
+                            class='bx bxl-linkedin-square'></i></a></div>
+                <div class="twitter"><a href="https://twitter.com/splunk" target="_blank"><i
+                            class='bx bxl-twitter'></i></a></div>
+                <div class="youtube"><a href="https://www.youtube.com/user/splunkvideos" target="_blank"><i
+                            class='bx bxl-youtube'></i> </a></div>
+
+            </div>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>
